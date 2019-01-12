@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>FiveNine</title>
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta property="og:image" content="{% static 'Asset 1_288ppi.jpg' %}">
+    <title>Five Nine Studio</title>
+    <link href="{% static 'test.css' %}" rel="stylesheet">
 <body>
-    <img src="{% static 'fivenine-splash.jpg' %}" height = 500px><img>
+</head>
+    <header>
+        <div>
+            <img src= "{% static 'Asset 1_288ppi.jpg' height='175px' %}"><img>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <a href="#">PROJECTS</a>
+            <a href="#">STUDIO</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <img src= "{% static 'fivenine-splash.jpg' %}" height="750"><img>
+    </main>
 </body>
 </html>
